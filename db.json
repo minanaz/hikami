@@ -1,0 +1,58 @@
+{
+  "anime": [
+    {
+      "desc": "A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the outer side that are releasing disasters all over in Japan.",
+      "name": "Suzume No Tojimari",
+      "genre": "fantasy",
+      "time": "122 min",
+      "url": "https://upload.wikimedia.org/wikipedia/ru/7/7f/Suzume_no_Tojimari_poster.jpg",
+      "liked": false,
+      "id": 3
+    },
+    {
+      "desc": "For the first time ever, Uta - the most beloved singer in the world - will reveal herself to the world at a live concert. The voice that the whole world has been waiting for is about to resound.",
+      "name": "One Piece Film Red",
+      "genre": "action, adventure, fantasy",
+      "time": "115 min",
+      "url": "https://static.wikia.nocookie.net/onepiece/images/3/34/One_Piece_Film_Red_Poster_Visual.png/revision/latest?cb=20220610180400&path-prefix=ru",
+      "liked": false,
+      "id": 4
+    },
+    {
+      "desc": "A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
+      "name": "Tenki no ko",
+      "genre": "animation, drama, fantasy",
+      "time": "114 min ",
+      "url": "https://m.media-amazon.com/images/M/MV5BNzE4ZDEzOGUtYWFjNC00ODczLTljOGQtZGNjNzhjNjdjNjgzXkEyXkFqcGdeQXVyNzE5ODMwNzI@._V1_UY1200_CR85,0,630,1200_AL_.jpg",
+      "liked": false,
+      "id": 5
+    },
+    {
+      "desc": "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
+      "name": "Kimi no Na wa",
+      "genre": "animation, drama, fantasy",
+      "time": "112 min",
+      "url": "https://resizing.flixster.com/XHvcBxuKMfWLooKZHqPrCusyz9Q=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2EyZDU1MDQyLWQ0MTMtNGJmOC04Y2QxLTE3ODFhYmJiMGM0Ny53ZWJw",
+      "liked": false,
+      "id": 6
+    },
+    {
+      "desc": "Determined to be like the volleyball championship's star player nicknamed \"the small giant\", Shoyo joins his school's volleyball club.",
+      "name": "Haikyuu!!",
+      "genre": "animaton, comedy, drama",
+      "time": "24 min",
+      "url": "https://m.media-amazon.com/images/M/MV5BNjkyNDI2MTgtN2Y3NS00M2RjLWJhNDMtMmNmZmUwMDQwZTE1XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+      "liked": false,
+      "id": 7
+    },
+    {
+      "desc": "A 15-year-old boy and 27-year-old woman find an unlikely friendship one rainy day in the Shinjuku Gyoen National Garden.",
+      "name": "Koto no ha no niwa",
+      "genre": "animation, drama, romance",
+      "time": "46 min",
+      "url": "https://m.media-amazon.com/images/M/MV5BMTJjZmQ5MGQtMWU0My00ZTMzLWFmNTMtNDgzNmU4Y2MxOGUxXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
+      "liked": false,
+      "id": 8
+    }
+  ]
+}

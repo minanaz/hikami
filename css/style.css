@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300;400&family=Poppins&display=swap");
+/* Обнуление */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    background-color: #111111;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-width: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+/*! ================== HEADER START  ================= */
+
+h2 {
+    margin-left: 60px;
+    position: relative;
+    font-size: 25px;
+    color: #0e3742;
+    -webkit-box-reflect: below -42px linear-gradient(transparent, #0004);
+}
+span {
+    animation: animate 5s linear infinite;
+    margin: 0 5px;
+}
+span:nth-child(even) {
+    animation-delay: 0.4s;
+}
+@keyframes animate {
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+            0 0 80px #03bcf4, 0 0 160px #03bcf4, 0 0 400px #03bcf4;
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(65, 62, 62, 0.74);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navigation {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    list-style: none;
+}
+.navigation__item a {
+    color: rgb(229, 228, 228);
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 0 0 25px;
+}
+.navigation__item a:hover {
+    color: rgb(49, 83, 194);
+}
+.search-box {
+    background: #e2ede9;
+    padding: 16px 0;
+    height: 15px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    color: #022417;
+    float: right;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: #e2ede9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-box:hover > .search-txt {
+    width: 180px;
+    padding: 0 6px;
+}
+*/ .search-box:hover > .search-btn {
+    background-color: #033723a3;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: rgb(6, 6, 6);
+    font-size: 16px;
+    width: 0px;
+    transition: 0.4s;
+    line-height: 40px;
+}
+
+#open-admin {
+    width: 30px;
+    height: 30px;
+    background-size: 80% 80%;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://icons.veryicon.com/png/o/miscellaneous/yuanql/icon-admin.png);
+}
+.burger-menu {
+    display: none;
+}
+@media (max-width: 767px) {
+    .burger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .burger-menu span {
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: -5px;
+        top: 9px;
+    }
+    .burger-menu::before,
+    .burger-menu::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .burger-menu::before {
+        top: 0;
+    }
+    .burger-menu::after {
+        bottom: 0;
+    }
+}
+/*? ================== HEADER END  ================= */
+
+/*! ================== SWIPER START  ================= */
+/* Главный контейнер */
+.image-slider {
+    padding: 30px 0 70px 0;
+    width: 90%;
+    margin: 0 auto;
+    min-width: 0;
+}
+/* Оболочка */
+.image-slider__wrapper {
+    width: inherit;
+    background-color: #4d4d4d;
+    border-radius: 15px;
+}
+/* Слайд */
+.image-slider__slide {
+    width: 100%;
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 15px;
+}
+/*  Див с контентом внутри слайда */
+.image-slider__wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Див с картинкой в слайде */
+.image-slider__image {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    width: 100%;
+}
+/* Картинка внутри дива */
+.image-slider__image img {
+    max-width: 90%;
+    border-radius: 15px;
+}
+/* Кнопка в слайде */
+.image-slider__wrapper-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #4d4d4d8e;
+}
+/* Ссылка в кнопке */
+.image-slider__wrapper-btn a {
+    color: white;
+    text-shadow: 0 0 10px #1e1e1e, 0 0 20px #1e1e1e, 0 0 40px #1e1e1e,
+        0 0 80px #1e1e1e, 0 0 160px #1e1e1e, 0 0 400px #1e1e1e;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+}
+/* Стрелки */
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color: #fff;
+    font-size: 50px;
+}
+/* Буллеты */
+.image-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #fff;
+}
+/* Скроллбар */
+.image-slider .swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.swiper-pagination,
+.swiper-scrollbar {
+    width: inherit;
+}
+
+.swiper-scrollbar {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*? ================== SWIPER END  ================= */
+
+/*! ================== NEON BTN START  ================= */
+
+.left a::before {
+    content: "";
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+.left a:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+}
+
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03bcf4);
+}
+
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03bcf4);
+}
+
+.button:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #03bcf4);
+}
+
+.button:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03bcf4);
+}
+
+.button:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4;
+    transition-delay: 1s;
+    background-color: #03bcf4;
+    color: white;
+}
+
+/*? ================== NEON BTN END  ================= */
+
+/*! ================== CREATE START  ================= */
+
+.section__add {
+    margin-top: 20px;
+    font-family: system-ui;
+    display: none;
+}
+.section__add div {
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 8px 0px 17px 0px rgba(111, 116, 120, 0.2);
+}
+.accordion__header {
+    border-radius: 10px 10px 0 10px;
+    padding: 5px 20px 5px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgb(133, 132, 132);
+    cursor: pointer;
+    line-height: 1.25rem;
+    font-size: 1.1rem;
+    background-color: white;
+}
+.accordion__header::after {
+    content: "\002B";
+    position: absolute;
+    right: 1rem;
+}
+.accordion__header .active::after {
+    content: "\2212";
+}
+
+#accordion__body {
+    background-color: rgba(111, 116, 120, 0.15);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+}
+#accordion__body input {
+    margin: 2px 0 2px 0;
+    border: 1px solid rgb(133, 132, 132);
+    border-radius: 5px 5px 0 5px;
+    font-family: system-ui;
+}
+#accordion__body button {
+    border: 1.5px solid rgb(133, 132, 132);
+    border-radius: 5px 5px 0 5px;
+    font-family: system-ui;
+    font-size: 15px;
+}
+/*? ================== CREATE END  ================= */
+
+/*! ================== ANIME CARD START  ================= */
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.anime-card {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+}
+.anime-card__img {
+    height: 300px;
+    width: 100%;
+}
+
+.anime-card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.anime-info {
+    margin-top: 10px;
+}
+.anime-name p {
+    color: #e2ede9;
+    font-size: 16px;
+}
+
+.anime-genre p {
+    color: #a9a7a7;
+    font-size: 12px;
+}
+
+.anime-time p {
+    color: #555555;
+}
+.anime-desc p {
+    color: #c2c1c1;
+    font-size: 14px;
+}
+/*? ================== ANIME CARD END  ================= */
+
+/*! ================== PAGINATE START  ================= */
+.paginate button {
+    margin: 10px 0;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #777777;
+    color: white;
+    font-family: "Poppins", cursive;
+}
+.paginate {
+    display: flex;
+    justify-content: center;
+}
+/*? ================== PAGINATE END  ================= */
+
+/*! ================== EDIT START  ================= */
+
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.648);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+.inner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-form {
+    /* margin: 0 auto; */
+    width: 50%;
+    height: 400px;
+    background-color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    color: #f6f2f6;
+}
+.modal-form h2 {
+    margin-top: 15px;
+}
+.modal-form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+}
+.modal-save {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 60px;
+    width: 20%;
+    background-color: #777777;
+    border-radius: 10px;
+    border-color: #777777;
+    color: white;
+}
+.modal-form div input {
+    height: 25px;
+    border-radius: 10px;
+    border-color: rgb(207, 206, 206);
+}
+.close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: #777777;
+    border-radius: 10px;
+    border-color: #777777;
+    color: white;
+}
+
+/*? ================== EDIT END  ================= */
+
+/*! ================== FOOTER START  ================= */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+.footer {
+    background-color: #1e1e1e;
+    padding: 30px 0px;
+}
+.footer-col {
+    width: 25%;
+    padding: px 10px;
+    font-size: 15px;
+}
+.footer-col a {
+    color: rgb(88, 85, 85);
+}
+.footer-col h4 {
+    font-size: 16px;
+}
+
+.icon {
+    display: inline-block;
+    animation: animated 5s ease-in-out infinite;
+    color: #fff;
+    right: 0;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+#insta {
+    animation-delay: 1s;
+    padding-top: 12px;
+    color: rgb(211, 67, 213);
+}
+#facebook {
+    animation-delay: 2s;
+    color: blue;
+}
+#twit {
+    color: #03bcf4;
+}
+@keyframes animated {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.footer-col ul a:hover {
+    color: rgb(49, 83, 194);
+}
+/*? ================== FOOTER END  ================= */
